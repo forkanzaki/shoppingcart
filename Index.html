@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Hind Siliguri' rel='stylesheet'>
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: 'Hind Siliguri'; font-size: 22px; font-weight: 700;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #product-list, #cart {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 20px;
+            text-align: left;
+        }
+
+        .product {
+            margin-bottom: 10px;
+        }
+
+        .cart-item {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="product-list">
+    <h2>Product List</h2>
+    <div class="product" id="product1">
+        মালাই কোফতা - ৳১৩০
+        <button onclick="addToCart('মালাই কোফতা', 130)">Add to Cart</button>
+    </div>
+    <div class="product" id="product2">
+        শাহি কাচ্চি বিরিয়ানি - ৳২১০
+        <button onclick="addToCart('শাহি কাচ্চি বিরিয়ানি', 210)">Add to Cart</button>
+    </div>
+    <div class="product" id="product3">
+        মোরগ মুসাল্লম - ৳৪২০
+        <button onclick="addToCart('মোরগ মুসাল্লম', 420)">Add to Cart</button>
+    </div>
+    <div class="product" id="product4">
+        শাহী জাফরানি ফিরনী - ৳৫০
+        <button onclick="addToCart('শাহী জাফরানি ফিরনী', 50)">Add to Cart</button>
+    </div>
+</div>
+
+<div id="cart">
+    <h2>Shopping Cart</h2>
+    <div id="cart-items"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
